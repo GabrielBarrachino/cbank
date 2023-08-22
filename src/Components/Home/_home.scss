@@ -1,0 +1,140 @@
+.home{
+    background: url(../../Assets/bgBanner.svg) no-repeat center top;
+    background-size: contain;
+    height: 62rem;
+    .container{
+        padding-top: 18.7rem;
+        .contentHome{
+            .contentTop{
+                margin-bottom: 3.4rem;
+                .new{
+                    background-color: #006D8F;
+                    padding: 6px 1.1rem;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Inter;
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    border-radius: 12rem;
+                    margin-right: 1.2rem;
+                }
+                .secondSpan{
+                    color: rgba(255, 255, 255, 0.7);
+                    font-family: Inter;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    line-height: 150%;
+                }
+            }
+            .contentBottom{
+                .title{
+                    max-width: 100%;
+                    width: 74rem;
+                    color: #FFF;
+                    font-size: 4.8rem;
+                    font-weight: 700;
+                    line-height: 130%;
+                }
+                .text{
+                    max-width: 100%;
+                    width: 36.5rem;
+                    color: rgba(255, 255, 255, 0.7);
+                    font-family: Inter;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    line-height: 150%;
+                    margin-top: 2.4rem;
+                    margin-bottom: 4rem;
+                }
+                .btnConta{
+                    background: transparent;
+                    border: 1px solid #FFF;
+                    color: #FFF;
+                    height: 4.5rem;
+                    &:hover{
+                        background-color: #FFF;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1400px){
+        background-size: cover;
+    }
+    @media (max-width: 991px){
+        .container{
+            .contentHome{
+                .contentTop{
+                    .secondSpan{
+                        font-size: 1.3rem;
+                    }
+                }
+                .contentBottom{
+                    .title{
+                        width: 70rem;
+                        font-size: 4rem;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 768px){
+        .container{
+            .contentHome{
+                .contentTop{
+                    margin-bottom: 2.8rem;
+                    .new{
+                        display: none;
+                    }
+                }
+                .contentBottom{
+                    .title{
+                        width: 60rem;
+                        font-size: 3.6rem;
+                    }
+                    .text{
+                        font-size: 1.5rem;
+                        margin-top: 2rem;
+                        margin-bottom: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 490px){
+        background-size: initial;
+        background-position: left;
+        height: 55rem;
+        .container{
+            text-align: center;
+            .contentHome{
+                .contentTop{
+                    margin-bottom: 2rem;
+                }
+                .contentBottom{
+                    .title{
+                        font-size: 3rem;
+                    }
+                    .text{
+                        font-size: 1.3rem;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 420px){
+        .container{
+            .contentHome{
+                .contentBottom{
+                    .title{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

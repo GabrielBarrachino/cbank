@@ -1,0 +1,76 @@
+.btnConta{
+    max-width: 100%;
+    width: 24.3rem;
+    height: 4rem;
+    border-radius: 10rem;
+    background-color: #FFCE2E;
+    color: #242424;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    transition: all .4s ease;
+    &:hover{
+        background-color: rgba(245, 191, 13, 0.568);
+    }
+}
+
+.infoTarifa{
+    max-width: 100%;
+    width: 26rem;
+    display: flex;
+    flex-direction: column;
+    .iconInfo{
+        max-width: 100%;
+        width: 2.2rem;
+        height: 1.6rem;
+    }
+    .infoTextContainer{
+        margin-top: 1.6rem;
+        padding-top: 1.6rem;
+        position: relative;   
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1.9rem;
+            height: 3px;
+            background-color: #FFCE2E;
+        }
+        .infoTitle{
+            color: #242424;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 150%;
+            margin-bottom: 8px;
+        }
+        .infoSubtitle{
+            color: #616161;
+            font-family: Inter;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+}
+
+.top{
+    max-width: 100%;
+    width: 34.1rem;
+    .topTitle{
+        color:  #242424;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: -1.2px;
+        margin-bottom: 8px;
+    }
+    .topSubtitle{
+        color: #616161;
+        font-size: 2.8rem;
+        font-weight: 500;
+        line-height: 130%;
+    }
+}
