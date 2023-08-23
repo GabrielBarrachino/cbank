@@ -1,8 +1,39 @@
-header{
+.header{
     width: 100%;
-    padding: 3rem 0;
+    padding: 2rem 0;
     position: fixed;
-    z-index: 2;
+    transition: all .4s ease; 
+    z-index: 20;
+    &.active{
+        background: #fff;
+        box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.2);
+        .container{
+            .logoContainer{
+                .logo{
+                    max-width: 100%;
+                    width: 12rem;
+                    height: 2.4rem;
+                    background: url(../../Assets/logo.svg) no-repeat center center;
+                }
+            }
+            nav{
+                .menuContainer{
+                    display: flex;
+                    align-items: center;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        &:not(:last-child){
+                            margin-right: 4.6rem;
+                        }
+                        .link{
+                            color: #616161;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .container{
         display: flex;
         align-items: center;
@@ -12,6 +43,7 @@ header{
                 max-width: 100%;
                 width: 12rem;
                 height: 2.4rem;
+                background: url(../../Assets/logobranca.svg) no-repeat center center;
             }
         }
         nav{
@@ -48,11 +80,23 @@ header{
         }
     }
     @media (max-width: 460px){
+        &.active{
+            .container{
+                .logoContainer{
+                    .logo{
+                        width: 10rem;
+                        height: 2rem;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
         .container{
             .logoContainer{
                 .logo{
                     width: 10rem;
                     height: 2rem;
+                    background-size: cover;
                 }
             }
             .btnConta{

@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import logoHeader from '../../Assets/logobranca.svg';
 import imgTriangulo from '../../Assets/trianguloMenu.svg';
 
 const Header = () => {
+    const [header, setHeader] = useState(false);
+    const changeBackground = () => {
+        if (window.scrollY >= 80){
+            setHeader(true);
+        } else {
+            setHeader(false);
+        }
+    }
+    window.addEventListener('scroll', changeBackground);
+
     return (
-        <header>
+        <header className={header ? "header active" : "header"}>
             <div className="container">
                 <div className="logoContainer">
                     <a href="/">
-                        <img src={logoHeader} alt="Logo do site" title="Logo do site" className="logo"/>
+                        <div className="logo"></div>
                     </a>
                 </div>
 
@@ -32,18 +42,3 @@ const Header = () => {
 }
 
 export default Header;
-
-
-
-{/* <div className="infoTarifa">
-    <img src={infoIcon}  alt="" title="ícone card" className="iconInfo"/>
-    <div className="infoTextContainer">
-        <h4 className="infoTitle">Saques nos caixas da rede Banco24Horas</h4>
-        <p className="infoSubtitle">São mais de 23 mil caixas em 680 municípios do Brasil. Saques ilimitados sem cobrança de tarifa.</p>
-    </div>
-</div> */}
-
-{/* <div className="top">
-    <h3 className="topTitle">Sem tarifas:</h3>
-    <h3 className="topSubtitle">economize seu dinheiro</h3>
-</div> */}

@@ -1,6 +1,6 @@
 .home{
     background: url(../../Assets/bgBanner.svg) no-repeat center top;
-    background-size: contain;
+    background-size: cover;
     height: 62rem;
     .container{
         padding-top: 18.7rem;
@@ -127,8 +127,10 @@
         }
     }
     @media (max-width: 420px){
+        height: 48rem;
         .container{
             .contentHome{
+                margin-top: -5rem;
                 .contentBottom{
                     .title{
                         font-size: 2.5rem;

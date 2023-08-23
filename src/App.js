@@ -2,6 +2,7 @@ import React from 'react';
 import './Styles/css/main.min.css';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
+import Tariffs from './Components/Tariffs/Tariffs';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       
       <Home />
       <main className='container'>
+        <Tariffs />
       </main>
     </>
   )

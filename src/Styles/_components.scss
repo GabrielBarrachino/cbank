@@ -25,6 +25,10 @@
         max-width: 100%;
         width: 2.2rem;
         height: 1.6rem;
+        &.iconInfoSecond{
+            width: 2.2rem;
+            height: 2.2rem;
+        }
     }
     .infoTextContainer{
         margin-top: 1.6rem;
@@ -54,6 +58,16 @@
             line-height: 150%;
         }
     }
+    @media (max-width: 420px){
+        .infoTextContainer{
+            .infoTitle{
+                font-size: 1.6rem;
+            }
+            .infoSubtitle{
+                font-size: 1.4rem;
+            }
+        }
+    }
 }
 
 .top{
@@ -61,7 +75,7 @@
     width: 34.1rem;
     .topTitle{
         color:  #242424;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 700;
         line-height: 130%;
         letter-spacing: -1.2px;
@@ -69,8 +83,16 @@
     }
     .topSubtitle{
         color: #616161;
-        font-size: 2.8rem;
+        font-size: 2rem;
         font-weight: 500;
         line-height: 130%;
+    }
+    @media (max-width: 420px){
+        .topTitle{
+            font-size: 2.6rem;
+        }
+        .topSubtitle{
+            font-size: 1.7rem;
+        }
     }
 }
