@@ -3,6 +3,7 @@ import './Styles/css/main.min.css';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Tariffs from './Components/Tariffs/Tariffs';
+import Banco from './Components/Banco/Banco';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <main className='container'>
         <Tariffs />
       </main>
+      <Banco />
     </>
   )
 }

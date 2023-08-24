@@ -47,6 +47,13 @@
         }
     }
     @media (max-width: 900px){
+        justify-content: center;
+        .contentRight{
+            .top{
+                text-align: center;
+                width: 100%;
+            }
+        }
         .contentLeft{
             display: none;
         }
